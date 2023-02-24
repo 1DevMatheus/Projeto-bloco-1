@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./assets/style/estilo.css">
+</head>
+<body>
+    <div class="flex padding-50 mg-50">
+        <div class="back">
+            <h1 class="contato">Entre em contato comigo! </h1>
+            <form>
+               <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
+                </div>
+                
+             <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" onkeyup="validaEmail2()">
+                    <div id="txtEmail"></div>
+             </div>
+               
+             <div> 
+                <textarea name="Assunto" id="assunto" cols="30" rows="10" onkeyup="validaMensagem()">Assunto</textarea>
+                <div id="txtMensagem"></div>
+                <button onclick="enviarForm()">Enviar</button>
+                
+             </div>
+    
+    
+            </form>
+        </div>
+        <div class="back mg-50 padding-50 iframe">
+            <H2>Endereço</H2>
+            <p>Rua Tucano - 28B</p>
+            <p>São Paulo/sp</p>
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.67980598662!2d-46.43750128563903!3d-23.61581366948912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6f343d88b7a1%3A0xe14274eb0f5d89db!2sRua%20Tucano%2C%2028%20-%20Iguatemi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004849-655!5e0!3m2!1spt-BR!2sbr!4v1676578038805!5m2!1spt-BR!2sbr" id="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmouseover="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+        </div>
+    </div>
+   
+    
+    <div>
+     <nav>
+        <a style="color: rgb(253, 96, 128);" class="menu" href="index.html">Voltar</a>
+     </nav>
+      
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
